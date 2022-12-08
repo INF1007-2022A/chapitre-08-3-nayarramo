@@ -61,8 +61,8 @@ def convert_to_samples(bytes):
 
 
 def main():
-	print([int(b) for b in struct.pack("h", 258)])
-	print(struct.unpack("hhh", bytes([2, 1, 42, 0, 0, 1])))
+	print("test", [int(b) for b in struct.pack("h", 258)])
+	print("test2", struct.unpack("hhh", bytes([2, 1, 42, 0, 0, 1])))
 
 	print(merge_channels([[11, 12], [21, 22]]))
 	print(separate_channels([11, 12, 21, 22, 31, 32], 3))
